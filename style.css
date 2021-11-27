@@ -1,0 +1,87 @@
+/* stylesheet */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+body{
+  background-color: rgb(240,240,240);
+}
+
+
+#container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#container_2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 1em;
+}
+
+#drawing_surface{
+  background-color: rgba(255, 255, 255, 1.0);
+  background: rgba(255, 255, 255, 1.0);
+  border: 2px solid grey;
+}
+
+#stats_panel{
+  width: 200px;
+  height: 450px;
+  background: white;
+  margin-right: 10px;
+  border: 2px solid grey;
+}
+
+#settings_panel{
+  width: 200px;
+  height: 450px;
+  margin-left: 10px;
+  background: white;
+  border: 2px solid grey;
+}
+
+#train_button{
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 30px;
+  border: 2px solid grey;
+  background: white;
+  text-align: center;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+
+#train_button:hover{
+  cursor: pointer;
+}
+
+
+.vert_flex{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.data_entry_btn{
+  border: 2px solid grey;
+  padding: 5px;
+  margin: 5px;
+}
+
+.label_1{
+  margin: 5px;
+}
+
+.btn:hover{
+  cursor: pointer;
+
+}

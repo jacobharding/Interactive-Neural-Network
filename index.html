@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis@1.0.2/dist/tfjs-vis.umd.min.js"></script>
+</head>
+
+
+<body class="en">
+  <div id="container">
+    <div id="container_2">
+        <div id="stats_panel" class="vert_flex">
+          <div class="vert_flex" style="margin-bottom: 15px;">
+            <h1 style="font-size: 20px; text-decoration: underline; margin: 5px">Stats</h1>
+            <div style="display: flex">
+              <ul class="vert_flex" style="align-items: flex-end; width: max-content">
+                <li class="label_1">Accuracy: </li>
+                <li class="label_1">Loss: </li>
+                <li class="label_1">Epochs: </li>
+              </ul>
+              <ul class="vert_flex" style="width: max-content">
+                <li id="model_accuracy_label" class="label_1"></li>
+                <li id="model_loss_label" class="label_1"></li>
+                <li id="number_of_epochs_trained" class="label_1"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div id="train_button">Train Model</div>
+          <canvas id="drawing_surface" width="800" height="600">
+          </canvas>
+        </div>
+    </div>
+
+    <img id="class_1_img" src="class_1_img.png" alt="class 1" hidden=true>
+    <img id="class_2_img" src="class_2_img.png" alt="class 2" hidden=true>
+    <img id="class_3_img" src="class_3_img.png" alt="class 3" hidden=true>
+    <img id="red_class_1_block_img" src="red_class_1_block_img.png" alt="class 1" hidden=true>
+    <img id="green_class_2_block_img" src="green_class_2_block_img.png" alt="class 2" hidden=true>
+    <img id="blue_class_3_block_img" src="blue_class_3_block_img.png" alt="class 3" hidden=true>
+  </div>
+
+  <script type="text/javascript" src="model_1_training_data.js"></script>
+  <script type="text/javascript" src="graphing_script.js"></script>
+  <script type="text/javascript" src="neural_network_script.js"></script>
+  <script type="text/javascript" src="generate_data_points.js"></script>
+</body>
+</html>
